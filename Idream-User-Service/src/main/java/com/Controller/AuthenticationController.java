@@ -35,7 +35,7 @@ public class AuthenticationController {
 	public ResponseEntity<?> signUp(@Valid @RequestBody RegisterRequest registerRequest){
 		
 		log.debug("Register Request:- "+ registerRequest);
-		
+		log.info("Register Request:- "+ registerRequest);
 		System.out.println(registerRequest);
 		
 		return new ResponseEntity(as.UserRegister(registerRequest), HttpStatus.OK);
